@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="objects.js"></script>
+    <script src="data.js"></script>
+    <script src="actions.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <body onload="myFunction()"></body>
+</head>
+<body>
+
+<div id = "title">
+    <p><b>Students Management System</b></p>
+</div>
+
+<div id = "title1">
+    <p><b>Add Student</b></p>
+</div>
+
+<table id = "table1" border=”1” >
+    <table class="table table-striped">
+    <tr>
+        <td>Student First Name
+            <input type="text" id="studentsFirstName" value="" size="25">
+        </td>
+        <td>Student Last Name
+            <input type="text" id="studentsLastName" value="" size="25">
+        </td>
+        <td>Student Grade
+            <select id="selectBox">
+                <option value=9>9</option>
+                <option value=10>10</option>
+                <option value=11>11</option>
+                <option value=12>12</option>
+            </select>
+    </tr>
+</table>
+
+    <button type="button" id = "button1" onclick="addStudent()"class="btn btn-success">Add student</button>
+
+<div id = "title2">
+    <p><b>Add Teacher</b></p>
+</div>
+
+<table id = "table2" border=”1”>
+    <table class="table table-striped">
+    <tr>
+        <td>Teacher First Name
+            <input type="text" id="teachersFirstName" value="" size="25">
+        </td>
+        <td>Teacher Last Name
+            <input type="text" id="teachersLastName" value="" size="25">
+        </td>
+        <td>Teacher Subject
+            <input type="text" id="teachersSubject" value="" size="25">
+    </tr>
+</table>
+
+    <button type="button" id = "button2" onclick="addTeacher()"class="btn btn-success">Add teacher</button>
+
+<div id = "title3">
+    <p><b>Add Section</b></p>
+</div>
+
+<table id = "table3" border=”1”>
+    <table class="table table-striped">
+    <tr>
+        <td>Section Name
+            <input type="text" id="sectionName" value="" size="25">
+        </td>
+        <td>Section Number
+            <input type="text" id="sectionNumber" value="" size="25">
+        </td>
+</table>
+
+    <div>
+    <button type="button" id = "button3" onclick="addSection()"class="btn btn-success">Add section</button>
+    </div>
+
+    <div>
+    <select id="listSomething">
+        <option value="1">Students</option>
+        <option value="2">Teachers</option>
+        <option value="3">Sections</option>
+    </select>
+        <button type="button" id = "button7" onclick="hide()"class="btn btn-success">Hide</button>
+    <button type="button" id = "button4" onclick="list()"class="btn btn-success">List Items</button>
+    </div>
+
+    <div id = "listStuff">
+
+    </div>
+
+    <div id = "title6">
+
+    </div>
+
+    <div id = "listStuff2">
+
+    </div>
+
+    <div id = "title4">
+        <p><b>Add Students to Section</b></p>
+    </div>
+
+    <table id = "table4" border=”1”>
+        <table class="table table-striped">
+            <tr>
+                <td>Students
+                    <select id="selectStudent"></select>
+                </td>
+                <td>Section Name
+                    <select id="selectSection"></select>
+                </td>
+        </table>
+
+        <button type="button" id = "button5" onclick="addStudentToSection()"class="btn btn-success">Add to Section</button>
+
+        <div id = "title5">
+            <p><b>Remove Students from Section</b></p>
+        </div>
+
+        <table id = "table5" border=”1”>
+            <table class="table table-striped">
+                <tr>
+                    <td>Students
+                        <select id="selectStudent2"></select>
+                    </td>
+                    <td>Section Name
+                        <select id="selectSection2"></select>
+                    </td>
+            </table>
+
+            <button type="button" id = "button6" onclick="removeStudentFromSection()"class="btn btn-success">Remove from Section</button>
+</body>
+</html>
